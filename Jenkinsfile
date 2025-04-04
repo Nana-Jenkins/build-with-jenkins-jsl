@@ -32,7 +32,7 @@ pipeline {
         stage("build and push image") {
             steps {
                 script {
-                    buildImage()
+                    buildImage 'chisom444/demo-images:jma-5.0'
                     // buildImage 'nanatwn/demo-app:jma-3.0'
                     // dockerLogin()
                     // dockerPush 'nanatwn/demo-app:jma-3.0'
